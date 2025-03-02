@@ -1,8 +1,8 @@
 import React from 'react'
-import './Hero.css'
+import './Home.css'
 import { assets } from '../../assets/assets'
 
-const Hero = () => {
+const Home = () => {
   return (
     <div className='hero container' >
         <div className="hero-text">
@@ -17,4 +17,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Home
