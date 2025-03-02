@@ -1,0 +1,54 @@
+/* Card container */
+.card {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column; /* Ensures title, image, and description stack vertically */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px; /* Optional: keeps the card at a max width */
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease;
+  background-color: #fff; /* Optional: background color for the card */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Title - centered */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; /* Centers the title */
+  margin: 10px 0; /* Adds some margin above and below the title */
+}
+
+/* Image container */
+.card-image-container {
+  width: 100%;
+  height: 150px; /* Keeps the height fixed */
+  overflow: hidden; /* Ensures the image stays within bounds */
+}
+
+.card-image {
+  width: 100%; /* Makes the image fill the container */
+  height: 100%; /* Ensures the image fills the container */
+  object-fit: cover; /* Ensures the image aspect ratio is maintained */
+}
+
+/* Description - aligned left */
+.card-description {
+  font-size: 1em;
+  color: #555;
+  text-align: left; /* Aligns description to the left */
+  margin-top: 10px; /* Adds some space above the description */
+  padding: 0 16px; /* Optional: Adds padding to the sides of the description */
+}
+
+.card-ads{
+ text-decoration: none;
+ padding: 20px;
+}
